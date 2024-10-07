@@ -2,9 +2,9 @@ import books from "../DataBase/Data.js";
 
 // new books section
 
-const newBooksCarouselItem1 = document.getElementById("newBooksCarouselItem1");
-const newBooksCarouselItem2 = document.getElementById("newBooksCarouselItem2");
-const newBooksCarouselItem3 = document.getElementById("newBooksCarouselItem3");
+// const newBooksCarouselItem1 = document.getElementById("newBooksCarouselItem1");
+// const newBooksCarouselItem2 = document.getElementById("newBooksCarouselItem2");
+// const newBooksCarouselItem3 = document.getElementById("newBooksCarouselItem3");
 
 const newestBookFiltred1 = books().filter(book => book.date <= 4);
 const newestBookFiltred2 = books().filter(book => book.date <= 8 && book.date > 4);
@@ -126,9 +126,9 @@ selfDevBooks.slice(6,9).forEach(book => {
 
 // best of snovels section
 
-const bestNovelsCarouselItem1 = document.getElementById("bestNovelsCarouselItem1");
-const bestNovelsCarouselItem2 = document.getElementById("bestNovelsCarouselItem2");
-const bestNovelsCarouselItem3 = document.getElementById("bestNovelsCarouselItem3");
+// const bestNovelsCarouselItem1 = document.getElementById("bestNovelsCarouselItem1");
+// const bestNovelsCarouselItem2 = document.getElementById("bestNovelsCarouselItem2");
+// const bestNovelsCarouselItem3 = document.getElementById("bestNovelsCarouselItem3");
 
 const novels = books().filter(book => book.categorie.includes("novel"));
 const sortednovelsPerRate = novels.sort(function (a, b) {
