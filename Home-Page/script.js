@@ -5,7 +5,7 @@ import books from "../DataBase/Data.js";
 const newBooksCarouselItem1 = document.getElementById("newBooksCarouselItem1");
 const newBooksCarouselItem2 = document.getElementById("newBooksCarouselItem2");
 const newBooksCarouselItem3 = document.getElementById("newBooksCarouselItem3");
-
+//
 const newestBookFiltred1 = books().filter(book => book.date <= 4);
 const newestBookFiltred2 = books().filter(book => book.date <= 8 && book.date > 4);
 const newestBookFiltred3 = books().filter(book => book.date <= 12 && book.date > 8);
