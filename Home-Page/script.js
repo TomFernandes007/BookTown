@@ -126,9 +126,9 @@ selfDevBooks.slice(6,9).forEach(book => {
 
 // best of snovels section
 
-// const bestNovelsCarouselItem1 = document.getElementById("bestNovelsCarouselItem1");
-// const bestNovelsCarouselItem2 = document.getElementById("bestNovelsCarouselItem2");
-// const bestNovelsCarouselItem3 = document.getElementById("bestNovelsCarouselItem3");
+const bestNovelsCarouselItem1 = document.getElementById("bestNovelsCarouselItem1");
+const bestNovelsCarouselItem2 = document.getElementById("bestNovelsCarouselItem2");
+const bestNovelsCarouselItem3 = document.getElementById("bestNovelsCarouselItem3");
 
 const novels = books().filter(book => book.categorie.includes("novel"));
 const sortednovelsPerRate = novels.sort(function (a, b) {
@@ -144,7 +144,7 @@ sortednovelsPerRate.slice(0,4).forEach(book => {
 sortednovelsPerRate.slice(4,8).forEach(book => {
     bestNovelsCarouselItem2.innerHTML += (cartCreator(book));
 })
-
+////helloooooooooooooooo
 sortednovelsPerRate.slice(8,12).forEach(book => {
     bestNovelsCarouselItem3.innerHTML += (cartCreator(book));
 })
