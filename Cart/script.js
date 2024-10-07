@@ -1,7 +1,7 @@
 const productItemsList = document.getElementById("productItemsList");
 
 let parsedData = JSON.parse(localStorage.getItem("data")) || [];
-
+//
 if (parsedData) {
   parsedData.forEach((product, number) => {
     const cartCard = `<tr>
